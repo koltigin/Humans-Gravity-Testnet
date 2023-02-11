@@ -1,4 +1,4 @@
-# Humans.ai Gravity Testnet Kurulum Rehberi
+# Humans Gravity Testnet Kurulum Rehberi
 
 [Kaynak](https://docs.humans.zone) / [Explorer](https://explorer.humans.zone)
 ![Humans-GitHub](https://user-images.githubusercontent.com/102043225/218226260-8b425422-4ba6-4fa6-9e58-9deac0edd891.jpg)
