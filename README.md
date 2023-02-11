@@ -235,7 +235,7 @@ humansd status 2>&1 | jq .SyncInfo
    - `security-contact`  E-posta adresiniz.
  ```shell 
 humansd tx staking create-validator \
---amount=7000000uheart \
+--amount=9500000uheart \
 --pubkey=$(humansd tendermint show-validator) \
 --moniker=$HUMAN_NODENAME \
 --chain-id=$HUMAN_CHAIN_ID \
