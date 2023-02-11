@@ -66,7 +66,7 @@ echo "export HUMAN_CHAIN_ID=Testnet3" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 
-## Humans'nın Kurulması
+## Humans'ın Kurulması
 
 ```shell
 git clone https://github.com/humansdotai/humans
@@ -243,7 +243,12 @@ humansd tx staking create-validator \
 --website="https://anatolianteam.com" \
 --identity="XXXX1111XXXX1111" \
 --yes
-``` 
+```
+
+## Validator Rolü Alma
+[Discord'da](https://discord.gg/humansdotai) `#create-ticket` sayfasına giderek `Validator Role Request` butonuna tıklayarak validatorumuze ait exlporer linkini gönderiyoruz.
+![image](https://user-images.githubusercontent.com/102043225/218235056-78d89f04-f45d-42e0-b630-08f91c182f7a.png)
+![image](https://user-images.githubusercontent.com/102043225/218235208-814755ef-2b91-4a45-9d4c-d18e0646eb7d.png)
 
 ## YARARLI KOMUTLAR
 
