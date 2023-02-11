@@ -1,8 +1,8 @@
 # Humans.ai Gravity Testnet Kurulum Rehberi
 
 # Gitopia Türkçe Kurulum Rehberi
-[Kaynak](https://docs.gitopia.com/validator-setup/index.html) / [Explorer](https://explorer.gitopia.com/)
-![image](https://user-images.githubusercontent.com/102043225/176181117-e8589025-8649-4ac3-9308-08c48f0335fe.png)
+[Kaynak](https://docs.humans.zone) / [Explorer](https://explorer.humans.zone)
+![Humans-GitHub](https://user-images.githubusercontent.com/102043225/218226260-8b425422-4ba6-4fa6-9e58-9deac0edd891.jpg)
 
 ## Bağlantılar
  ✔️ [Website](https://humans.ai/)<br>
