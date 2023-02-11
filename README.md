@@ -254,23 +254,23 @@ humansd tx staking create-validator \
 
 ## Logları Kontrol Etme 
 ```
-journalctl -fuhumansd -o cat
+journalctl -fu humansd -o cat
 ```
 
 ### Sistemi Başlatma
 
 ```
-systemctl starthumansd
+systemctl start humansd
 ```
 
 ### Sistemi Durdurma
 ```
-systemctl stophumansd
+systemctl stop humansd
 ```
 
 ### Sistemi Yeniden Başlatma
 ```
-systemctl restarthumansd
+systemctl restart humansd
 ```
 
 ### Node Senkronizasyon Durumu
@@ -415,14 +415,14 @@ humansd tx slashing unjail \
 ### Node'u Tamamen Silme 
 
 ```
-systemctl stophumansd && \
-systemctl disablehumansd && \
+systemctl stop humansd && \
+systemctl disable humansd && \
 rm /etc/systemd/system/humansd.service && \
 systemctl daemon-reload && \
 cd $HOME && \
 rm -rf .humans humans && \
-rm -rf $(whichhumansd) \
-sed -i '/GITOPIA_/d' ~/.bash_profile
+rm -rf $(which humansd) \
+sed -i '/HUMAN_/d' ~/.bash_profile
 ```
 
 # Hesaplar:
