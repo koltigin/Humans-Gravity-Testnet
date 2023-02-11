@@ -78,26 +78,6 @@ cp humansd /usr/local/bin/humansd
 humansd version
 ```
 
-Versiyon Kontrolü
-```shell
-humansd version --long
-```
-Çıktı aşağıdaki gibi olmalıdır; 
-```shell
-build_deps:
-- cloud.google.com/go@v0.102.1
-- cloud.google.com/go/compute@v1.7.0
-- cloud.google.com/go/iam@v0.4.0
-...
-build_tags: netgo,ledger
-commit: 9bf1b1d5211f7afc0ca42fb4b7a411b0437a301f
-cosmos_sdk_version: v0.46.3
-go: go version go1.18.6 darwin/arm64
-name: humans
-server_name:humansd
-version: 1.2.0
-```
-
 ## Uygulamayı Yapılandırma ve Başlatma
 ```shell
 humansd config keyring-backend test
