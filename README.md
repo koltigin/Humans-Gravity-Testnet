@@ -230,22 +230,20 @@ humansd tx staking create-validator \
 --pubkey=$(humansd tendermint show-validator) \
 --moniker=$HUMAN_NODENAME \
 --chain-id=$HUMAN_CHAIN_ID \
---commission-rate="0.1" \
---commission-max-rate="0.5" \
---commission-max-change-rate="0.1" \
+--commission-rate=0.10 \
+--commission-max-rate=0.20 \
+--commission-max-change-rate=0.01 \
 --min-self-delegation="1" \
---fees=250uheart \
---gas=200000 \
+--gas-prices=0.1uheart \
+--gas-adjustment=1.5 \
+--gas=auto \
 --from=$HUMAN_WALLET \
 --details="Always forward with the Anatolian Team 🚀" \
 --security-contact="xxxxxxx@gmail.com" \
 --website="https://anatolianteam.com" \
 --identity="XXXX1111XXXX1111" \
 --yes
- ``` 
-
-## Form Doldurma
-Validator oluşturduktan sonra [buradaki](https://airtable.com/shrMQFJxcsMD0XV2M) formu da doldurunuz.
+``` 
 
 ## YARARLI KOMUTLAR
 
