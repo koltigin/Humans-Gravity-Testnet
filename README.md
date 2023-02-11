@@ -205,16 +205,8 @@ echo 'export HUMAN_VALOPER_ADDRESS='${HUMAN_VALOPER_ADDRESS} >> $HOME/.bash_prof
 source $HOME/.bash_profile
 ```
 
-🔴 **Cüzdan oluşturma ya da içeri aktarma sırasında aşağıdaki gibi bir hata alırsanız**
-
- * `-bash: /root/go/bin/humansd: No such file or directory`
-Bu kodu giriniz;
-```shell
-cp /usr/bin/humansd /root/go/bin
-```
-
 ## Faucet
-[humans](https://humans.com/home) adresine giderek yukarıda oluşturduğumuz cüzdanı kepler ile siteye bağlayarak `Get TLORE` butonuna basarak 10 adet token istiyoruz. 
+[humans](https://discord.gg/humansdotai) adresine giderek `#testnet-faucet` kanalından `$request cuzdan-adresi` şeklinde mesaj atarak token istiyoruz. 
 
 🔴 **BU AŞAMADAN SONRA NODE'UMUZUN EŞLEŞMESİNİ BEKLİYORUZ.**
 
