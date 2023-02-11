@@ -70,10 +70,6 @@ source $HOME/.bash_profile
 ## Humans'nın Kurulması
 
 ```shell
-curl https://get.humans.com | bash
-git clone -b v1.2.0 humans://humans/humans
-cd humans && make install
-
 git clone https://github.com/humansdotai/humans
 cd humans || return
 git checkout v1.0.0
