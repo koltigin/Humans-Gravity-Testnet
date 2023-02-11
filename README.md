@@ -157,18 +157,12 @@ EOF
 ```shell
 humansd tendermint unsafe-reset-all --home $HOME/.humans --keep-addr-book
 
-SNAP_RPC="https://humans-testnet.nodejumper.io:443"
+cp $HOME/.humans/data/priv_validator_state.json $HOME/.humans/priv_validator_state.json.backup 
 
-LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height);
-BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000));
-TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
+humansd tendermint unsafe-reset-all --home $HOME/.humans --keep-addr-book 
+curl https://snapshots-testnet.nodejumper.io/humans-testnet/testnet-1_2023-02-10.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.humans
 
-echo $LATEST_HEIGHT $BLOCK_HEIGHT $TRUST_HASH
-
-sed -i 's|^enable *=.*|enable = true|' $HOME/.humans/config/config.toml
-sed -i 's|^rpc_servers *=.*|rpc_servers = "'$SNAP_RPC,$SNAP_RPC'"|' $HOME/.humans/config/config.toml
-sed -i 's|^trust_height *=.*|trust_height = '$BLOCK_HEIGHT'|' $HOME/.humans/config/config.toml
-sed -i 's|^trust_hash *=.*|trust_hash = "'$TRUST_HASH'"|' $HOME/.humans/config/config.toml
+mv $HOME/.humans/priv_validator_state.json.backup $HOME/.humans/data/priv_validator_state.json
 
 ```
 
